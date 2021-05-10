@@ -40,6 +40,8 @@ export default function Playground(props) {
       <button onClick={() => setWeapon("rock")}>pick rock</button>
       <button onClick={() => setWeapon("paper")}>pick paper</button>
 
+      <div>the spinner is {spinnerOn ? "ON" : "OFF"}</div>
+
       <button
         onClick={() => {
           setCount(count + 1);
