@@ -35,6 +35,7 @@ function App(props) {
       <div>
         {instructor} birthday is {birthday}
       </div>
+      <div>It is week {week}</div>
       {happy ? <div>Very happy</div> : <div>It is Monday</div>}
       <Playground />
     </div>
@@ -43,7 +44,13 @@ function App(props) {
 //usually exists once per application
 // very similar to append or appendChild
 render(
-  <App cohort="43" instructor="Rhiannon" happy={true} birthday="October 31" />,
+  <App
+    cohort="43"
+    instructor="Rhiannon"
+    happy={true}
+    birthday="October 31"
+    week={2}
+  />,
   document.querySelector("#root")
 );
 
