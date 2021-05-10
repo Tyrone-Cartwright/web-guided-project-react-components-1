@@ -17,7 +17,9 @@ export default function Playground(props) {
   // it will return an array with 2 things: the state itself and a state changer
   // NO declaring variables with 'let' to hold state => the hook takes its place
 
-  const [count, ] = useState(0)
+  const [count, setCount] = useState(0);
+
+  console.log(count);
 
   return (
     <div className="container">
