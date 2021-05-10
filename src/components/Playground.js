@@ -18,11 +18,12 @@ export default function Playground(props) {
   // NO declaring variables with 'let' to hold state => the hook takes its place
 
   const [count, setCount] = useState(0);
-  const [happy, sestHappy]
+
 
   return (
     <div className="container">
       <h3>Playground for Web {props.cohort}</h3>
+      <div>the count is {</div>
     </div>
   );
 }
