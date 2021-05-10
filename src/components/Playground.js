@@ -19,11 +19,10 @@ export default function Playground(props) {
 
   const [count, setCount] = useState(0);
 
-
   return (
     <div className="container">
       <h3>Playground for Web {props.cohort}</h3>
-      <div>the count is {</div>
+      <div>the count is {count}</div>
     </div>
   );
 }
