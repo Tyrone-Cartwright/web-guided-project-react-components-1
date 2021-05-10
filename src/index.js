@@ -23,7 +23,7 @@ import { render } from "react-dom";
 
 function App(props) {
   // one object called props
-  const { chort, intructor, happy, week, birthday } = props;
+  const { cohort, instructor, happy, week, birthday } = props;
   // examples of things you can return in react
   // return "hello world";
   // return `hello web ${props.cohort}`;
