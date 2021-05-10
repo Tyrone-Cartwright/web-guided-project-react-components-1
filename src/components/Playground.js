@@ -14,7 +14,8 @@ import React from "react";
 export default function Playground(props) {
   // return "playground for " + props.cohort;
   return (
-      <div className="container"></div>
-    
+    <div className="container">
+      <h3>Playground for Web {props.cohort}</h3>
+    </div>
   );
 }
