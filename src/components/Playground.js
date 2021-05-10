@@ -18,7 +18,7 @@ export default function Playground(props) {
   // NO declaring variables with 'let' to hold state => the hook takes its place
 
   const [count, setCount] = useState(0);
-  const [spinnerOn, setSpinnerOn] = useState(true);
+  const [spinnerOn, setSpinnerOn] = useState(false);
 
   if (spinnerOn) {
     return (
@@ -33,7 +33,11 @@ export default function Playground(props) {
     <div className="container">
       <h3>Playground for Web {props.cohort}</h3>
       <div>the count is {count}</div>
-      <
+      <div>the current weapon is scissors</div>
+
+      <button>pick scissors</button>
+      <button>pick rock</button>
+      <button>pick paper</button>
 
       <button
         onClick={(event) => {
