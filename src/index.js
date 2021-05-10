@@ -27,13 +27,16 @@ function App(props) {
   const { cohort, instructor, happy, week } = props;
 
   // return "hello world";
-  return `hello web ${props.cohort}`;
-  // return (
-  //   <div className="container">
-  //     <h1>Welcome to React, Web {props.cohort}</h1>
-  //     <div>{props.instructor} welcomes you!</div>
-  //   </div>
-  // );
+  // return `hello web ${props.cohort}`;
+
+  return (
+    <div className="container">
+      <h1>Welcome to React, Web {props.cohort}</h1>
+      <div>{props.instructor} welcomes you!</div>
+
+      {happy ? <div>Very happy</div> : <div>It is Monday</div>}
+    </div>
+  );
 }
 
 // usually exists once per application
