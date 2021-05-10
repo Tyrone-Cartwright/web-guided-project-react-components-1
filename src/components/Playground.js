@@ -18,8 +18,7 @@ export default function Playground(props) {
   // NO declaring variables with 'let' to hold state => the hook takes its place
 
   const [count, setCount] = useState(0);
-
-  console.log(count);
+  const [happy, sestHappy]
 
   return (
     <div className="container">
