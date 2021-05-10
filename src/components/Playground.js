@@ -24,7 +24,7 @@ export default function Playground(props) {
     return (
       <div container="container">
         Please wait. Loading...
-        <button onClick={} >turn spinner off</button>
+        <button onClick={(evt) => setSpinnerOn(false)}>turn spinner off</button>
       </div>
     );
   }
