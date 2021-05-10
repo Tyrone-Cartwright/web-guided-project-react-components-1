@@ -31,8 +31,8 @@ function App(props) {
 
   return (
     <div className="container">
-      <h1>Welcome to React, Web {props.cohort}</h1>
-      <div>{props.instructor} welcomes you!</div>
+      <h1>Welcome to React, Web {cohort}</h1>
+      <div>{instructor} welcomes you!</div>
 
       {happy ? <div>Very happy</div> : <div>It is Monday</div>}
     </div>
@@ -42,6 +42,6 @@ function App(props) {
 // usually exists once per application
 // similar to append or appendChild
 render(
-  <App cohort="43" instructor="Rhiannon" />,
+  <App cohort="43" instructor="Rhiannon" happy={true} />,
   document.querySelector("#root")
 );
