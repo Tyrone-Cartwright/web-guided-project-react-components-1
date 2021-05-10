@@ -41,7 +41,7 @@ function App(props) {
 //usually exists once per application
 // very similar to append or appendChild
 render(
-  <App cohort="43" instructor="Rhiannon" happy={true} birthday="January 23" />,
+  <App cohort="43" instructor="Rhiannon" happy={true} birthday="October 31" />,
   document.querySelector("#root")
 );
 
