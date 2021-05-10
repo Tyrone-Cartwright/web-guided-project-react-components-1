@@ -27,7 +27,7 @@ function App(props) {
   const { cohort, instructor, happy, week } = props;
 
   // return "hello world";
-  return `hello ${props.cohort}`;
+  return `hello web ${props.cohort}`;
   // return (
   //   <div className="container">
   //     <h1>Welcome to React, Web {props.cohort}</h1>
