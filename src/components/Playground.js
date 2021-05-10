@@ -22,9 +22,11 @@ export default function Playground(props) {
 
   if (spinnerOn) {
     return (
-
-      <div container="container">Loading...</div>;
-    )
+      <div container="container">
+        Please wait. Loading...
+        <button>turn spinner off</button>
+      </div>
+    );
   }
 
   return (
