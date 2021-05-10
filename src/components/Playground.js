@@ -20,6 +20,10 @@ export default function Playground(props) {
   const [count, setCount] = useState(0);
   const [spinnerOn, setSpinnerOn] = useState(true);
 
+  if (spinnerOn) {
+    return <div container= >Loading...</div>
+  }
+
   return (
     <div className="container">
       <h3>Playground for Web {props.cohort}</h3>
