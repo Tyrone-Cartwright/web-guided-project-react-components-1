@@ -36,6 +36,7 @@ function App(props) {
         {instructor} birthday is {birthday}
       </div>
       {happy ? <div>Very happy</div> : <div>It is Monday</div>}
+      <Playground />
     </div>
   );
 }
