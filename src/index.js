@@ -21,27 +21,51 @@ import { render } from "react-dom";
   - Don't forget all tags need to close correctly
 */
 
-// we have many of these
 function App(props) {
-  // one object called "props"
-  const { cohort, instructor, happy, week } = props;
-
+  // one object called props
+  const { chort, intructor, happy, week, birthday } = props;
+  // examples of things you can return in react
   // return "hello world";
   // return `hello web ${props.cohort}`;
-
   return (
     <div className="container">
       <h1>Welcome to React, Web {cohort}</h1>
       <div>{instructor} welcomes you!</div>
-
+      <div>
+        {instructor} birthday is {birthday}
+      </div>
       {happy ? <div>Very happy</div> : <div>It is Monday</div>}
     </div>
   );
 }
-
-// usually exists once per application
-// similar to append or appendChild
+//usually exists once per application
+// very similar to append or appendChild
 render(
-  <App cohort="43" instructor="Rhiannon" happy={false} />,
+  <App cohort="43" instructor="Rhiannon" happy={true} birthday="January 23" />,
   document.querySelector("#root")
 );
+
+// we have many of these
+// function App(props) {
+//   // one object called "props"
+//   const { cohort, instructor, happy, week } = props;
+
+//   // return "hello world";
+//   // return `hello web ${props.cohort}`;
+
+//   return (
+//     <div className="container">
+//       <h1>Welcome to React, Web {cohort}</h1>
+//       <div>{instructor} welcomes you!</div>
+
+//       {happy ? <div>Very happy</div> : <div>It is Monday</div>}
+//     </div>
+//   );
+// }
+
+// // usually exists once per application
+// // similar to append or appendChild
+// render(
+//   <App cohort="43" instructor="Rhiannon" happy={false} />,
+//   document.querySelector("#root")
+// );
