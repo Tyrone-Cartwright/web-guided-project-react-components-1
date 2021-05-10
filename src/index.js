@@ -21,6 +21,7 @@ import { render } from "react-dom";
   - Don't forget all tags need to close correctly
 */
 
+// we have many of these
 function App(props) {
   return (
     <div className="container">
@@ -30,6 +31,8 @@ function App(props) {
   );
 }
 
+// usually exists once per application
+// similar to append or appendChild
 render(
   <App cohort="43" instructor="Rhiannon" />,
   document.querySelector("#root")
