@@ -12,6 +12,6 @@
 import React from "react";
 
 export default function Playground(props) {
-  // return "playground";
-  return null;
+  // return "playground for " + props.cohort;
+  
 }
