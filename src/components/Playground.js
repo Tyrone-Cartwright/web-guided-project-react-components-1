@@ -19,7 +19,7 @@ export default function Playground(props) {
 
   const [count, setCount] = useState(0);
   const [spinnerOn, setSpinnerOn] = useState(false);
-  
+  const [weapon, setWeapon] = useState("scissors");
 
   if (spinnerOn) {
     return (
