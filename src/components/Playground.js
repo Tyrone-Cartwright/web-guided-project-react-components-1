@@ -13,7 +13,9 @@ import React, { useState } from "react";
 
 export default function Playground(props) {
   // useState allows to us to set internal state
-  // it is afunction 
+  // it is afunction that takes the desired initial state
+  // it will return an array with 2 things: the state itself and a state changer
+  // NO declaring 
   return (
     <div className="container">
       <h3>Playground for Web {props.cohort}</h3>
