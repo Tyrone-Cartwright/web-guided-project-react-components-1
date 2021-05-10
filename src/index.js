@@ -42,7 +42,7 @@ function App(props) {
 // very similar to append or appendChild
 render(
   <App cohort="43" instructor="Rhiannon" happy={true} birthday="October 31" />,
-  document.querySelector("#x")
+  document.querySelector("#root")
 );
 
 // we have many of these
