@@ -18,7 +18,7 @@ export default function Playground(props) {
   // NO declaring variables with 'let' to hold state => the hook takes its place
 
   const [count, setCount] = useState(0);
-  const [] = useState();
+  const [spinnerOn, setSpinnerOn] = useState(true);
 
   return (
     <div className="container">
