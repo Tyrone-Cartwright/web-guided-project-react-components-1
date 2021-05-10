@@ -23,12 +23,17 @@ import { render } from "react-dom";
 
 // we have many of these
 function App(props) {
-  return (
-    <div className="container">
-      <h1>Welcome to React, Web {props.cohort}</h1>
-      <div>{props.instructor} welcomes you!</div>
-    </div>
-  );
+  // one object called "props"
+  const { cohort, instructor, happy, week } = props;
+
+  return "hello world";
+
+  // return (
+  //   <div className="container">
+  //     <h1>Welcome to React, Web {props.cohort}</h1>
+  //     <div>{props.instructor} welcomes you!</div>
+  //   </div>
+  // );
 }
 
 // usually exists once per application
