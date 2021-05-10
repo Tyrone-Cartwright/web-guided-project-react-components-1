@@ -29,4 +29,7 @@ function App(props) {
   );
 }
 
-render(<App cohort="43" />, document.querySelector("#root"));
+render(
+  <App cohort="43" instructor="Rhiannon" />,
+  document.querySelector("#root")
+);
