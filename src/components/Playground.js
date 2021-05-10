@@ -21,7 +21,10 @@ export default function Playground(props) {
   const [spinnerOn, setSpinnerOn] = useState(true);
 
   if (spinnerOn) {
-    return <div container= >Loading...</div>
+    return (
+
+      <div container="container">Loading...</div>;
+    )
   }
 
   return (
