@@ -1,5 +1,6 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
+import Playground from './components/Playground';
 
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
@@ -21,15 +22,30 @@ import { render } from 'react-dom'
   - Don't forget all tags need to close correctly
 */
 
+// we have MANY of these components in app
 function App(props) {
+  // one object called "props"
+  const { cohort, instructor, happy, course } = props;
   return (
     <div className='container'>
-      <h1>Welcome to React, Web {props.cohort}</h1>
+      <h1>Welcome to React, Web {cohort}</h1>
+      <div>{instructor} welcome you</div>
+      <div>to {course}!</div>
+
+      {happy ? <div>Very happy</div> : <div>It is Friday</div>}
+
+      <Playground cohort={cohort} />
     </div>
-  )
+  );
 }
 
+// only once per app, usually
 render(
-  <App cohort='37' />,
+  <App
+    cohort='37'
+    instructor='Tyrone'
+    happy={false}
+    course='Intro to React.js'
+  />, // element(s)
   document.querySelector('#root')
-)
+);
